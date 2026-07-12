@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="1000" height="1400" role="img" aria-label="Clair de Lune — an interpretation of reflected light and suspended time">
+  <title>Clair de Lune</title>
+  <desc>Reflected moonlight as suspended pulse: a field of light-marks rising from pewter through silver to near-white, swelling once and receding into the top of the register, where the light thins and nearly escapes the frame.</desc>
+
+  <defs>
+    <!-- The night: not black, the deepest blue-violet of a clear sky -->
+    <radialGradient id="sky" cx="50%" cy="62%" r="85%">
+      <stop offset="0%"  stop-color="#161B33"/>
+      <stop offset="55%" stop-color="#0E1124"/>
+      <stop offset="100%" stop-color="#0B0D1A"/>
+    </radialGradient>
+
+    <!-- The disc of borrowed light -->
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#F2F0E4"/>
+      <stop offset="40%"  stop-color="#E4E6F0"/>
+      <stop offset="72%"  stop-color="#C7CEE8"/>
+      <stop offset="100%" stop-color="#C7CEE8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- The halo the eye can't resolve -->
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#C7CEE8" stop-opacity="0.55"/>
+      <stop offset="45%"  stop-color="#8E97C0" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#6B7399" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soften the marks so they read as light, not paint -->
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+    <filter id="bloom" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+
+    <!-- A single ascending melodic line, the tune that won't let you grip its pulse -->
+    <linearGradient id="line" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#6B7399" stop-opacity="0.0"/>
+      <stop offset="20%"  stop-color="#8E97C0" stop-opacity="0.7"/>
+      <stop offset="80%"  stop-color="#C7CEE8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F2F0E4" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ground -->
+  <rect width="1000" height="1400" fill="url(#sky)"/>
+
+  <!--
+    THE FIELD OF LIGHT-MARKS.
+    Each mark is a note. Read bottom-to-top as the piece in time.
+    Vertical position = register (low notes deep in the frame, high notes near the top).
+    Brightness/size = velocity. The arc: dim pewter at the opening (bottom),
+    swelling to the silver fortissimo plateau (mid-upper), then receding and
+    thinning into near-white sparks that climb past the moon and nearly leave the frame.
+    Horizontal scatter = the suspended pulse — marks refuse to line up on a beat.
+  -->
+
+  <!-- OPENING: low, dim, sparse — pewter notes entering from the dark (bottom third) -->
+  <g filter="url(#soft)" fill="#6B7399">
+    <circle cx="430" cy="1320" r="3.0" opacity="0.55"/>
+    <circle cx="560" cy="1300" r="2.4" opacity="0.45"/>
+    <circle cx="360" cy="1285" r="3.4" opacity="0.60"/>
+    <circle cx="620" cy="1268" r="2.2" opacity="0.40"/>
+    <circle cx="295" cy="1250" r="2.8" opacity="0.50"/>
+    <circle cx="510" cy="1240" r="3.6" opacity="0.62"/>
+    <circle cx="675" cy="1222" r="2.0" opacity="0.38"/>
+    <circle cx="400" cy="1208" r="3.0" opacity="0.55"/>
+    <circle cx="250" cy="1190" r="2.6" opacity="0.48"/>
+    <circle cx="590" cy="1178" r="3.2" opacity="0.58"/>
+    <circle cx="720" cy="1160" r="2.2" opacity="0.42"/>
+    <circle cx="340" cy="1150" r="3.8" opacity="0.64"/>
+    <circle cx="470" cy="1135" r="2.8" opacity="0.52"/>
+  </g>
+
+  <!-- RISING: notes climbing, warming toward silver, density increasing (mid-low) -->
+  <g filter="url(#soft)" fill="#8E97C0">
+    <circle cx="610" cy="1120" r="3.4" opacity="0.62"/>
+    <circle cx="300" cy="1105" r="4.0" opacity="0.66"/>
+    <circle cx="445" cy="1092" r="3.0" opacity="0.58"/>
+    <circle cx="700" cy="1078" r="3.6" opacity="0.64"/>
+    <circle cx="220" cy="1065" r="2.8" opacity="0.54"/>
+    <circle cx="540" cy="1052" r="4.2" opacity="0.70"/>
+    <circle cx="380" cy="1038" r="3.2" opacity="0.60"/>
+    <circle cx="660" cy="1025" r="3.8" opacity="0.66"/>
+    <circle cx="280" cy="1010" r="3.4" opacity="0.62"/>
+    <circle cx="495" cy="996"  r="4.4" opacity="0.72"/>
+    <circle cx="730" cy="984"  r="3.0" opacity="0.58"/>
+    <circle cx="350" cy="970"  r="4.0" opacity="0.68"/>
+    <circle cx="600" cy="958"  r="3.6" opacity="0.64"/>
+    <circle cx="430" cy="944"  r="4.6" opacity="0.74"/>
+    <circle cx="250" cy="932"  r="3.2" opacity="0.60"/>
+  </g>
+
+  <!-- THE SWELL: the single luminous plateau — brightest, densest, silver into white (the heart of the frame) -->
+  <g filter="url(#soft)" fill="#C7CEE8">
+    <circle cx="520" cy="916" r="5.0" opacity="0.82"/>
+    <circle cx="360" cy="902" r="4.4" opacity="0.76"/>
+    <circle cx="660" cy="890" r="4.8" opacity="0.80"/>
+    <circle cx="290" cy="876" r="4.0" opacity="0.72"/>
+    <circle cx="470" cy="864" r="5.4" opacity="0.86"/>
+    <circle cx="610" cy="850" r="4.6" opacity="0.78"/>
+    <circle cx="400" cy="838" r="5.0" opacity="0.82"/>
+    <circle cx="710" cy="826" r="4.2" opacity="0.74"/>
+    <circle cx="330" cy="814" r="4.8" opacity="0.80"/>
+    <circle cx="560" cy="802" r="5.6" opacity="0.88"/>
+    <circle cx="445" cy="790" r="5.0" opacity="0.82"/>
+    <circle cx="640" cy="778" r="4.4" opacity="0.76"/>
+  </g>
+  <!-- the peak, blooming -->
+  <g filter="url(#bloom)" fill="#F2F0E4">
+    <circle cx="500" cy="800" r="10" opacity="0.5"/>
+    <circle cx="470" cy="790" r="7"  opacity="0.45"/>
+    <circle cx="540" cy="810" r="6"  opacity="0.4"/>
+  </g>
+
+  <!-- THE MOON itself, sitting in the upper-middle where the swell crests -->
+  <circle cx="500" cy="560" r="240" fill="url(#halo)"/>
+  <circle cx="500" cy="560" r="150" fill="url(#moon)"/>
+  <circle cx="500" cy="560" r="150" fill="none" stroke="#F2F0E4" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- RECEDING: past the swell the light thins — fewer marks, smaller, climbing past the moon (upper third) -->
+  <g filter="url(#soft)" fill="#C7CEE8">
+    <circle cx="350" cy="690" r="3.4" opacity="0.62"/>
+    <circle cx="690" cy="672" r="3.0" opacity="0.56"/>
+    <circle cx="270" cy="650" r="3.6" opacity="0.60"/>
+    <circle cx="740" cy="628" r="2.6" opacity="0.50"/>
+    <circle cx="300" cy="470" r="3.0" opacity="0.55"/>
+    <circle cx="720" cy="448" r="3.2" opacity="0.56"/>
+    <circle cx="240" cy="410" r="2.6" opacity="0.48"/>
+    <circle cx="760" cy="388" r="2.8" opacity="0.50"/>
+  </g>
+
+  <!-- THE LAST NOTES: near-white sparks, high and thin, nearly escaping the top of the frame -->
+  <g filter="url(#soft)" fill="#F2F0E4">
+    <circle cx="430" cy="330" r="2.6" opacity="0.62"/>
+    <circle cx="600" cy="300" r="2.2" opacity="0.54"/>
+    <circle cx="340" cy="268" r="2.4" opacity="0.50"/>
+    <circle cx="660" cy="234" r="1.8" opacity="0.44"/>
+    <circle cx="480" cy="206" r="2.2" opacity="0.46"/>
+    <circle cx="540" cy="170" r="1.6" opacity="0.38"/>
+    <circle cx="410" cy="140" r="1.8" opacity="0.34"/>
+    <circle cx="580" cy="108" r="1.4" opacity="0.28"/>
+    <circle cx="470" cy="78"  r="1.4" opacity="0.22"/>
+    <circle cx="520" cy="50"  r="1.2" opacity="0.16"/>
+    <circle cx="490" cy="28"  r="1.0" opacity="0.10"/>
+  </g>
+
+  <!-- the melodic line: one continuous ascent, dissolving at both ends — the tune you can't grip -->
+  <path d="M 360 1300
+           C 520 1240, 300 1140, 470 1060
+           S 360 920, 540 840
+           S 460 700, 560 600
+           S 380 460, 520 340
+           S 480 180, 500 60"
+        fill="none" stroke="url(#line)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- faintest reflection on an implied surface at the base: light doubling itself, mirror in the mirror -->
+  <g filter="url(#bloom)" opacity="0.10" fill="#C7CEE8">
+    <ellipse cx="500" cy="1380" rx="300" ry="26"/>
+  </g>
+</svg>

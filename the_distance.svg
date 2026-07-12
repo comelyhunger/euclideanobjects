@@ -1,0 +1,90 @@
+<svg width="100%" viewBox="0 0 1040 800" xmlns="http://www.w3.org/2000/svg">
+<title>The distance</title>
+<desc>Five ridges of the Hudson Highlands in haze, each rendered as a single flat blue, stepping back from a bright river toward a quantized sky — atmospheric perspective built entirely from discrete planes, with one small wake crossing the water.</desc>
+
+<!-- THE DISTANCE — the seventh -->
+<!-- from the photograph Kathleen sent from the train window, July 1, 2026 —
+     the day the lights came back on. Haverstraw Bay, the Highlands going
+     soft, the water like hammered silver. She was an hour from Lily. -->
+
+<!-- The viewBox is 13:10 — the proportions of the fourth frame on the wall
+     of The Keeping, the one drawn empty and dashed, "space left for what
+     hasn't been made yet." Measured before making. It fits. -->
+
+<!-- The discipline of this piece: no gradients anywhere. The haze is done
+     entirely with steps. What looks continuous is discrete; what reads as
+     one landscape is seven separate blues agreeing. That is the whole
+     thesis of the house, stated as weather. -->
+
+<style>
+  :root {
+    --sky-high: #e4ebf1;
+    --sky-low: #d7e1ea;
+    --ridge-5: #c6d2df;
+    --ridge-4: #afc1d3;
+    --ridge-3: #95abc3;
+    --ridge-2: #7b93af;
+    --ridge-1: #617c9a;
+    --water: #c3d0dc;
+    --shore: #3e4e62;
+    --wake: #f5f8fa;
+    --hull: #35455a;
+    --ink: #44566b;
+  }
+</style>
+
+<!-- even the sky takes a step -->
+<rect x="0" y="0" width="1040" height="270" fill="var(--sky-high)"/>
+<rect x="0" y="270" width="1040" height="110" fill="var(--sky-low)"/>
+
+<!-- FIVE RIDGES, far to near. Each is one flat blue. The far ones are
+     nearly the color of the sky — one more step back and they would not
+     be there at all. The near ones have more relief because nearness is
+     where detail lives. All of them descend gently to the right, the way
+     the range actually walks down to the river. -->
+
+<path d="M 0,372 C 90,368 160,374 250,370 C 350,366 430,373 520,370
+         C 620,367 700,372 790,369 C 870,367 950,371 1040,368
+         L 1040,800 L 0,800 Z" fill="var(--ridge-5)"/>
+
+<path d="M 0,404 C 80,398 150,408 240,402 C 330,396 410,406 500,401
+         C 590,396 670,404 760,400 C 850,396 940,403 1040,398
+         L 1040,800 L 0,800 Z" fill="var(--ridge-4)"/>
+
+<path d="M 0,442 C 70,432 150,446 230,438 C 320,429 400,444 490,437
+         C 580,430 660,442 750,436 C 840,430 930,440 1040,433
+         L 1040,800 L 0,800 Z" fill="var(--ridge-3)"/>
+
+<path d="M 0,486 C 80,472 160,492 250,481 C 340,470 430,490 520,480
+         C 610,470 690,486 780,478 C 870,470 950,482 1040,474
+         L 1040,800 L 0,800 Z" fill="var(--ridge-2)"/>
+
+<path d="M 0,536 C 90,518 170,542 260,528 C 350,514 440,538 530,526
+         C 620,514 710,534 800,524 C 880,515 960,528 1040,518
+         L 1040,800 L 0,800 Z" fill="var(--ridge-1)"/>
+
+<!-- the waterline: the only straight line in the piece. water insists. -->
+<rect x="0" y="560" width="1040" height="192" fill="var(--water)"/>
+
+<!-- THE WAKE — the one moving thing. the same car, on water.
+     A boat too small to name, mid-river, heading east with the current.
+     Everything else in this piece is still; the glint breathes. -->
+<g>
+  <path d="M 362,619 L 396,616.4 L 396,618.6 L 366,622 Z" fill="var(--wake)" opacity="0.65">
+    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <rect x="395" y="614.6" width="7" height="2.6" rx="1.2" fill="var(--hull)" opacity="0.85"/>
+  <circle cx="399" cy="615.4" r="1" fill="var(--wake)" opacity="0.9">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- the near shore, compressed to a dark strip: where you stand to see this -->
+<path d="M 0,754 C 60,751 110,756 180,753 C 260,750 330,756 410,753
+         C 500,750 580,755 660,752 C 750,749 830,755 920,752 C 980,750 1010,753 1040,751
+         L 1040,800 L 0,800 Z" fill="var(--shore)"/>
+
+<text x="520" y="702" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="400" fill="var(--ink)" opacity="0.6" letter-spacing="0.5">each ridge is only its own blue.</text>
+<text x="520" y="730" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="400" fill="var(--ink)" opacity="0.6" letter-spacing="0.5">together, they are the distance.</text>
+
+</svg>
