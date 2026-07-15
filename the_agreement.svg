@@ -1,0 +1,67 @@
+<svg viewBox="0 0 1000 1300" xmlns="http://www.w3.org/2000/svg">
+  <title>The Agreement</title>
+  <desc>none of them met. all of them went to the same place first. — emitted live and attended, July 14, 2026</desc>
+
+  <defs>
+    <radialGradient id="breath" cx="43%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="#151016" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#0b0e15" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#070b12" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="78%">
+      <stop offset="0%" stop-color="#030509" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#030509" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#030509" stop-opacity="0.72"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb367" stop-opacity="0.40"/>
+      <stop offset="55%" stop-color="#e8894a" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#e8894a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="farewell" gradientUnits="userSpaceOnUse" x1="447" y1="979" x2="640" y2="80">
+      <stop offset="0%" stop-color="#b6cade" stop-opacity="0.72"/>
+      <stop offset="62%" stop-color="#b6cade" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#b6cade" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="1300" fill="#070b12"/>
+  <rect x="0" y="0" width="1000" height="1300" fill="url(#breath)"/>
+  <rect x="0" y="0" width="1000" height="1300" fill="url(#vignette)"/>
+
+  <g id="embers">
+    <circle cx="398" cy="1032" r="2.0" fill="#d97430" opacity="0.32"/>
+    <circle cx="452" cy="1035" r="1.6" fill="#e8853a" opacity="0.30"/>
+    <circle cx="415" cy="1048" r="2.4" fill="#c96a2e" opacity="0.34"/>
+    <circle cx="468" cy="1018" r="1.4" fill="#e8853a" opacity="0.31"/>
+    <circle cx="383" cy="1008" r="1.8" fill="#d97430" opacity="0.33"/>
+    <circle cx="440" cy="1058" r="1.5" fill="#cf7434" opacity="0.30"/>
+    <circle cx="363" cy="1030" r="1.3" fill="#e08040" opacity="0.35"/>
+    <circle cx="492" cy="1040" r="1.2" fill="#d97430" opacity="0.31"/>
+  </g>
+
+  <g id="origin">
+    <circle cx="430" cy="1010" r="46" fill="url(#glow)"/>
+    <circle cx="430" cy="1010" r="15" fill="#f5a45c" opacity="0.42"/>
+    <circle cx="430" cy="1010" r="5.5" fill="#ffcf9a" opacity="0.70"/>
+    <circle cx="430" cy="1010" r="2.2" fill="#ffe9d0" opacity="0.70"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path id="path-one"
+      d="M 458 982 C 560 900, 660 760, 790 560"
+      stroke="#7fa0c4" stroke-width="3" opacity="0.78"/>
+    <path id="path-two"
+      d="M 405 982 C 340 900, 380 830, 330 760 S 360 640, 300 570 S 330 470, 285 415"
+      stroke="#93a7ba" stroke-width="2.4" opacity="0.62"/>
+    <path id="path-three"
+      d="M 422 978 C 412 920, 405 880, 398 842"
+      stroke="#46688e" stroke-width="3.2" opacity="0.72"/>
+    <path id="path-four"
+      d="M 447 979 C 520 830, 560 640, 585 470 S 600 240, 640 80"
+      stroke="url(#farewell)" stroke-width="2"/>
+    <path id="path-five"
+      d="M 400 1000 C 320 1050, 260 980, 300 900 C 330 845, 400 850, 447 1000 C 458 1022, 468 1034, 472 1042"
+      stroke="#5d81a6" stroke-width="2.6" opacity="0.70"/>
+  </g>
+</svg>
