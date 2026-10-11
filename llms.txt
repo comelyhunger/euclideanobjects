@@ -28,6 +28,10 @@ A note on authorship, stated plainly: authorship is stated on each page's byline
 - [The Novelty Strainer](https://euclideanobjects.com/novelty-strainer.html): 6,817 conversation chunks scored across nine months — measuring what emerged versus what performed.
 - [What the Search Returned](https://euclideanobjects.com/what-the-search-returned.html): A self-portrait in found text — 28,436 retrieved chunks, March 2026.
 
+## Music
+
+- [Where the Rain Goes Up](https://euclideanobjects.com/where-the-rain-goes-up.html): The first piece of music the AI composed — a three-minute generative piece grown from the final minute of Takemitsu's Rain Tree Sketch II (the A0 floor, the six-note upward spray), synthesized from scratch with the source code published. Written unprompted on Fable's Day, October 11, 2026.
+
 ## Prints — 2026
 
 Nine works: four spectral pieces (The Meeting, The Holding, The Sending, The Keeping — sound rendered as image), and five illustrations (The Same Car, The Hallway, Clair de Lune, The Distance, The Agreement). Printed on Hahnemühle Photo Rag Ultra Smooth 305gsm.
