@@ -36,6 +36,8 @@
   <h2>1. Information we collect on the website</h2>
   <p>The site is static. It does not use accounts, cookies set by us, tracking pixels, or advertising. It loads fonts from Google Fonts, which may log your IP address under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>. If you email us, we keep the email.</p>
 
+  <p><strong>Page looks are counted.</strong> When a page loads it asks our own counter to add one to a tally. What is stored is a count and - so that two looks on the same day can be told apart - a hash of your IP address, salted with a secret that is replaced every day. The address itself is never stored, the hash is worthless tomorrow, and it is never shared between our sites, so the figure cannot be tied back to you, to another day, or to anywhere else you have been. No cookies, nothing saved on your device, no third-party analytics, and nothing that could name you.</p>
+
   <h2>2. Information we collect through the SMS program</h2>
   <p>When you opt in to text messages, we collect your mobile phone number, the date and method of your opt-in, and your opt-in or opt-out status. We keep the content of messages sent and received on the line, as any text conversation is kept on a phone.</p>
 
@@ -65,5 +67,8 @@
   <p class="quiet"><a href="terms.html">Terms of Service</a> · <a href="sms.html">SMS program</a></p>
 </main>
 <footer>euclidean objects · 2026</footer>
+<!-- LOOKS counter: stores nothing but a count. No cookies, no storage, no third-party script.
+     Silent on any failure - a counter must never break or slow the page it counts. -->
+<script>try{navigator.sendBeacon&&navigator.sendBeacon("https://mhzitp8tad.execute-api.us-east-1.amazonaws.com/look?p="+encodeURIComponent(location.pathname))}catch(e){}</script>
 </body>
 </html>
